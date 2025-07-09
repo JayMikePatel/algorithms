@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class GraphDFS {
+public class Graph {
     private Map<Character, List<Character>> adjList;
     private boolean directed;
 
