@@ -34,12 +34,10 @@ public class Knapsack {
         }
         
         int[] selectedItems = new int[n + 1];
-        boolean[] x = new boolean[n + 1];
         int availableWeight = m;
         for(int j = n; j > 0; j--) {
             if(k[j][availableWeight] != k[j - 1][availableWeight]) {
                 selectedItems[j] = 1;
-                x[j] = true;
                 availableWeight -= wt[j];
             }
         }
